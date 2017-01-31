@@ -1,7 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 800px;
   text-align: center;
+  margin: auto;
 }
 hr {
   width: 50%;
+}
+p {
+  text-align: left;
+  text-indent: 3mm; 
+  margin-bottom: 20px;
 }

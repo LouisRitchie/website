@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Louis Ritchie</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <h1>Louis Ritchie - <a href="index.html">Home</a></h1>
+  <h2>Jan 31 2017</h2>
+  <p>
+I'll be meeting up with the folks from UVic Aero tomorrow. Their club focuses on
+autonomous flying drones, which is a great area to study right now. I've been 
+looking at the PX4 drone software stack, and I thought I ought to dive into it 
+when I found time, but joining a club is going to be a much easier way to learn 
+about drone software.
+</p><p>
+
+UVic Aero has a slack channel that I was able to easily join. I expressed interest 
+in writing code for them, and they set me up on their Jira, Confluence, and Bitbucket
+sites. Chris from UVic Aero expressed that they have some web clients for their 
+drone that need rewriting. Currently, they are written in Backbone JS, but they're 
+looking to move their frontend code to React+Redux (no suprises here). They have 
+a ton of other technology in their stack, and I'd rather get my hands dirty with 
+the other stuff, but I need clout with this club first. Since I know React+Redux
+quite well, I should be able to bang out some new web clients for them really 
+quickly.
+</p><p>
+
+There are two other guys who have expressed interest in writing code for the club,
+and by the sounds of things, they'll be joining me on the web client rewrite project.
+I'm glad to have people join me. It would be nice if we could 
+become a formidable team together. It's always great to write code with an involved 
+and ambitous team.
+</p><p>
+
+Last weekend I worked on a Twitch viewbot detector with William Grosset. 
+The basic idea was to type a channel name, and our code would find and point out the 
+viewbots. That was a 
+great time. Will wrote the first bit of code for the client side, making async calls 
+to twitch's api. The problem with that was that it would run waay too slow when you 
+queried a channel with a large number of viewers. I convinced will that we should be 
+making the client a shell that simply talked to a server that was doing all of the 
+work. He agreed. I upgraded my Digital Ocean server from $5/month to 10$/month for 
+500mb more RAM, and then we got started.
+</p><p>
+
+I started setting up an Express framework on the server that would run our code, and 
+while I was able to serve pages and route requests just fine, I could not figure out
+how to make those async calls from my server to twitch. That was where our work stopped.
+It's pretty frustrating, but I'm sure I'll figure it out. The challenge is taking code 
+that worked in the browser and making it work on the server. I'm not sure when I'll 
+work on this project again, but hopefully the answer comes easily when I start up again.
+</p><p>
+
+Louis
+
+  </p>
+</body>
+ </html>
+
