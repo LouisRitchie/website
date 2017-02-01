@@ -3,6 +3,7 @@ body {
   max-width: 800px;
   text-align: center;
   margin: auto;
+  padding: 10px;
 }
 body > * {
   margin-bottom: 30px;
