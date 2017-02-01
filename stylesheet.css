@@ -4,11 +4,17 @@ body {
   text-align: center;
   margin: auto;
 }
+body > * {
+  margin-bottom: 30px;
+}
 hr {
   width: 50%;
 }
 p {
   text-align: left;
   text-indent: 3mm; 
-  margin-bottom: 20px;
+}
+.resume-and-github > a {
+  margin-left: 15px;
+  margin-right: 15px;
 }
