@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Louis Ritchie</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <h1>Louis Ritchie - <a href="index.html">Home</a></h1>
+  <h2>Feb 18 2017</h2>
+  <h3>Concatenating 2 or more .mp4s end-to-end with ffmpeg, a linux audio/visual encoder</h3>
+  <p>
+  Alright, so I just got finished concatenating some .mp4 files using ffmpeg. It
+  took me some time to get it working properly, so I'm going to record my setup here 
+  for future reference.
+</p><p>
+</p><p>
+1. transform each .mp4 into an intermediate .ts file <pre>ffmpeg -i myfile1.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts intermediate1.ts</pre>
+</p><p>
+2. concatenate all of the intermediate files <pre>ffmpeg -i "concat:intermediate1.ts|intermediate2.ts" -c copy -bsf:a aac_adtstoasc output.mp4</pre>
+
+</p><p>
+
+Louis
+
+  </p>
+</body>
+ </html>
+
