@@ -1,1 +1,1 @@
-sudo cp -r ./ /var/www/louisritchie.com/html/
+cp -r ./ /var/www/louisritchie.com/html/
