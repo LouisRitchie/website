@@ -4,6 +4,7 @@ body {
   text-align: center;
   margin: auto;
   padding: 10px;
+  list-style:none;
 }
 body > * {
   margin-bottom: 30px;
