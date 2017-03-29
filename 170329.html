@@ -73,6 +73,38 @@ another one of those people who was to lazy to really understand what was going 
 </p><p>
 Louis
   </p>
+  <h3>Update - 2pm, same day</h3>
+<p>
+I've fixed the issue, I was simply using the wrong kernel. I'm not sure how I changed 
+which kernel was active when I was clearing out the largest unused packages with the
+<code>dpkg</code> command listed above, but either way, that was the source of my 
+problems.
+</p><p>
+Here is the command I used to get a list of installed kernels: <code>dpkg --list | grep linux-image</code>
+To remove the kernels, I ran <code>sudo apt --purge autoremove</code>. By removing all 
+the unused and bad kernels, I was able to reboot into a working machine.
+</p>
 </body>
  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
