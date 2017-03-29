@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Louis Ritchie</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <h1>Louis Ritchie - <a href="index.html">Home</a></h1>
+  <h2>March 29 2017</h2>
+  <h3></h3>
+<p>
+Last night, I broke my OS. The Linux Mint distribution that runs on my laptop no longer connects to recognized wireless networks, it no longer recognizes peripherals, it no longer provides boot options at startup (so I might choose between kernals or run memory test), and it does not wake up if the lid is closed & opened again.
+</p><p>
+I wanted to make a create a screencast of myself playing Minecraft while talking into a 
+mic, and I wanted to use ffmpeg to capture my screen, audio loopback from Minecraft,
+and the audio from my USB Mic.
+After unsuccessfully trying different ffmpeg commands, I caved in and installed a screen
+cast application for Linux, called <a href="https://github.com/vkohaupt/vokoscreen">Voko
+screen</a>, which perfectly captured my screen, in-game sounds, and my voice. 
+However, when recording a cast, it stored the intermediate file in /tmp, which is in /,
+ a partition that only has 22gb of total space. Since I've installed many large programs like 
+ Audacity, LaTeX and all of it's extra fonts, and since I also have many broken, 
+ unused kernels, I have used up 20gb of that space. So, if I wanted to make a long 
+ Minecraft screencast, I needed to make more space.
+</p><p>
+I had been messing with mounting /tmp onto 
+/home/$USER/tmp
+</p><p>
+</p><p>
+
+Louis
+
+  </p>
+</body>
+ </html>
+
