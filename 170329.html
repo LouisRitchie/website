@@ -81,7 +81,7 @@ which kernel was active when I was clearing out the largest unused packages with
 problems.
 </p><p>
 Here is the command I used to get a list of installed kernels: <code>dpkg --list | grep linux-image</code>
-To remove the kernels, I ran <code>sudo apt --purge autoremove</code>. By removing all 
+To remove the kernels, I ran <code>sudo apt-get --purge remove [PACKAGE_NAME]</code>. By removing all 
 the unused and bad kernels, I was able to reboot into a working machine.
 </p>
 </body>
