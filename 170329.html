@@ -9,9 +9,10 @@
 <body>
   <h1>Louis Ritchie - <a href="index.html">Home</a></h1>
   <h2>March 29 2017</h2>
-  <h3></h3>
+  <h3>Breaking my OS provides motivation to learn Linux Systems Programming</h3>
 <p>
 Last night, I broke my OS. The Linux Mint distribution that runs on my laptop no longer connects to recognized wireless networks, it no longer recognizes peripherals, it no longer provides boot options at startup (so I might choose between kernals or run memory test), and it does not wake up if the lid is closed & opened again.
+In this blog post, I'll detail why this happened, and where I'm going from here.
 </p><p>
 I wanted to make a create a screencast of myself playing Minecraft while talking into a 
 mic, and I wanted to use ffmpeg to capture my screen, audio loopback from Minecraft,
@@ -19,19 +20,58 @@ and the audio from my USB Mic.
 After unsuccessfully trying different ffmpeg commands, I caved in and installed a screen
 cast application for Linux, called <a href="https://github.com/vkohaupt/vokoscreen">Voko
 screen</a>, which perfectly captured my screen, in-game sounds, and my voice. 
-However, when recording a cast, it stored the intermediate file in /tmp, which is in /,
+However, when recording a cast, it stored the intermediate file in <code>/tmp</code>, which is in <code>/</code>,
  a partition that only has 22gb of total space. Since I've installed many large programs like 
  Audacity, LaTeX and all of it's extra fonts, and since I also have many broken, 
- unused kernels, I have used up 20gb of that space. So, if I wanted to make a long 
- Minecraft screencast, I needed to make more space.
+ unused kernels, I have used up ~20gb of that space; in addition, though 
+ Disk Usage Analyzer shows I have ~1.5gb free in <code>/</code>, when 
+ I navigate to <code>/tmp</code> in the file explorer,
+ it only shows ~250mb of free space. That's confusing. Where are the remaining 1.25gb of space that I should have in <code>/</code>? Either way, if I wanted to make a long 
+ Minecraft screencast, I needed to make more space in / or figure out how to put Vokoscreen's temp files in my home directory (with about 100gb of free space).
 </p><p>
-I had been messing with mounting /tmp onto 
-/home/$USER/tmp
+The first thing I did was run <code>sudo apt clean</code>, which freed up 100mb. I then 
+  ran <code>dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | xargs sudo apt-get -y purge</code>
+, and I'm not really sure what effect that had. I also ran <code>sudo apt autoclean</code> and <code>sudo apt autoremove</code>.
+Finally, I ran <code>dpkg-query --show --showformat='${Package;-50}\t${Installed-Size}\n' | sort -k 2 -n | grep -v deinstall | awk '{printf "%.3f MB \t %s\n", $2/(1024), $1}'</code> 
+to find which packages were the largest, and then removed them with <code>apt</code>.
+I received the three previous sets of commands from <a href="http://askubuntu.com/questions/57994/root-drive-is-running-out-of-disk-space-how-can-i-free-up-space">StackOverflow</a>.
+For some reason, the Disk Usage Analyzer wasn't showing freed space equivalent to the size 
+of the packages I was deleting, so I recovered little space from all of this.
 </p><p>
+The other option was to move Vokoscreen's temp files to another location.
+I had been messing with mounting <code>/tmp</code> onto 
+<code>/home/$USER/tmp</code> to take advantage of the 100gb I had free in my home directory, 
+so I ran <code>sudo mount -B /tmp /home/$USER/tmp</code> by the suggestion of  
+<a href="http://askubuntu.com/questions/371619/move-tmp-folder-from-partition-to-mounted-partition-mnt">a seperate StackOverflow question</a>.
+This didn't seem to work, since when I navigated to <code>/tmp</code>, 
+I still had only ~250mb of free space shown.
 </p><p>
-
+After running all of these commands, not knowing what they did or how they worked,
+I rebooted. And then I noticed that my USB ports recognized nothing, my main monitor
+wasn't recognized through the Mini Display Port, and I had no internet connectivity.
+</p><p>
+I suspect that my problems have something to do with the kernels I deleted. And I also 
+need to figure out why my boot menu, which provides me with options to choose a kernel 
+and run memory tests, is not showing up, because as far as I remember, that little 
+monospaced menu would always appear when I started up.
+The obvious thing to do is to re-install my operating system, but I don't think I'm 
+going to do that yet...
+</p><p>
+If you read my previous posts, I lamented about how running student events was 
+inhibiting me from acquiring deep domain knowledge about systems programming and 
+general software engineering techniques. Well, I am going to take this massive 
+series of blunders that resulted in a broken system as an opportunity to figure out 
+how my machine really works. Fortunately, I have three or so books on Unix and Linux 
+systems programming that should help me out here. In reading these books I should gain 
+enough knowledge of the inner workings of my system that I can diagnose the problems 
+behind my broken USB ports, bootloader, monitors, and wireless.
+</p><p>
+For what it's worth, I'm embarrassed that I don't know what mounting a volume does, 
+or what linking does, or what comprises a package, even though I happily ran those 
+commands without thinking twice. This is cargo cult programming and it sucks to be 
+another one of those people who was to lazy to really understand what was going on.
+</p><p>
 Louis
-
   </p>
 </body>
  </html>
