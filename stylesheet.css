@@ -3,8 +3,8 @@ body {
   font-size: 18px;
   max-width: 800px;
   margin: auto;
-  padding: 10px;
-  list-style:none;
+  padding: 30px 10px 10px 10px;
+  list-style: none;
 }
 h1 {
   font-size: 3em;
