@@ -42,6 +42,8 @@ p {
   text-indent: 3mm; 
 }
 span {
-  padding-top: 40px;
-  color: #bbb;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: lightblue;
 }
