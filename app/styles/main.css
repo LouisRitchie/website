@@ -1,0 +1,350 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: white;
+}
+
+div, img, table {
+  max-width: 100%;
+}
+
+.fp-tableCell {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#section0{
+  background: -webkit-gradient(linear, top left, bottom left, from(#181a1b), to(#252829));
+  background: -webkit-linear-gradient(#181a1b, #252829);
+  background: linear-gradient(#181a1b,#252829);
+}
+
+#section1{
+  background-color: #252829;
+  height: 100%;
+}
+
+#section2{
+  background: -webkit-gradient(linear, top left, bottom left, from(#252829), to(#3d4143));
+  background: -webkit-linear-gradient(#252829, #3d4143);
+  background: linear-gradient(#252829,#3d4143);
+}
+
+#section3{
+  background-color: #3d4143;
+}
+
+
+
+
+
+
+
+
+
+
+.hero {
+  overflow: hidden;
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  margin: 0.4em;
+}
+
+.hero-uvgd-presents {
+  flex: 1 4 auto;
+  max-width: 300px;
+}
+
+.hero-ggj-logo {
+  flex: 1 1 auto;
+  padding: 0.6em 1.7em 0.6em 0.6em;
+}
+
+.hero-sponsored-by {
+  flex: 1 1 auto;
+}
+
+.hero-sponsor-logos {
+  flex: 1 4 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.hero-sponsor-logos * {
+  padding: 1em;
+}
+
+.hero-logo-starfish, .hero-logo-echosec, .hero-logo-llamazoo {
+  width: 100px;
+}
+
+.hero-logo-kano, .hero-logo-igda {
+  width: 200px;
+}
+
+.hero-logo-codename {
+  width: 400px;
+}
+
+.hero-logo-kano img, .hero-logo-igda img  {
+}
+
+.hero-logo-codename img {
+}
+
+.logo {
+  margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+  overflow: hidden;
+  max-height: 100%
+  font-size: 0.9em;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+
+.blurb {
+  width: 900px;
+  margin: 7px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blurb-text {
+  padding: 7px;
+  text-align: justify;
+}
+
+.about-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.whats-the-global-game-jam {
+  max-width: 962px;
+  max-height: 270px;
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  flex: 0 1 auto;
+}
+
+.blurb-items {
+  flex: 2 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.blurb-items .wrapper {
+  padding: 10px 5px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.how-do-i-sign-up{
+
+}
+
+.register {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-fee {
+  color: green;
+}
+
+.button-link {
+  flex: 0 1 auto;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #636F8F;
+  background: #FFF024;
+}
+
+.button-link:hover {
+  color: #009CFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.schedule {
+  font-size: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+@media (max-width: 910px) {
+  .schedule {
+    font-size: 10px;
+  }
+}
+
+.schedule p {
+  font-size: 0.5em;
+  margin-left: 12px;
+}
+
+#timer {
+  align-self: flex-start;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding-left: 20px;
+  font-size: 0.7em;
+}
+
+.schedule-heading {
+  min-height: 40px;
+  font-size: 2.5em;
+}
+
+.schedule-starts-in {
+  align-self: flex-start;
+}
+
+.schedule-links div {
+  padding: 12px 0; 
+}
+
+.tg {
+  font-size: 0.5em;
+  line-height: 2em;
+  margin: 20px;
+  color: white;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.tg td {
+  overflow:hidden;
+  word-break:normal;
+  border: 1px dotted gray;
+}
+
+.tg tr:last-child td {
+  border-bottom: none;
+
+}
+
+.tg tr:first-child {
+  border-top: 1px solid white;
+}
+
+.tg tr:last-child {
+  border-bottom: 1px solid white;
+}
+
+.tg td:first-child {
+  border-left: 1px solid white;
+}
+
+.tg td:last-child {
+  border-right: 1px solid white;
+}
+
+.tg th {
+  padding:7px;
+  border: 1px solid white;
+  overflow:hidden;
+  word-break:normal;
+}
+
+.tg .tg-yw4l {
+  vertical-align:top;
+}
+
+
+
+
+
+
+
+
+
+
+.contact {
+  overflow: hidden;
+  font-size: 0.9em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.press-kit {
+  height: 76px;
+  width: 319px; 
+}
+
+.contact-blurb {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+
+.contact-words {
+  height: 76px;
+  width: 250px;
+}

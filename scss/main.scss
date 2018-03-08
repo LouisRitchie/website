@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+// helpers
+@import "helpers/global-variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// base
+@import "base/base";
+
+// components
+@import "components/section";
+@import "components/menu";
+@import "components/btn-next";
+
+// layouts
+@import "layouts/header";
+@import "layouts/content";
+@import "layouts/footer";
+
+// sections
+@import "sections/section-1";
+@import "sections/section-2";
+@import "sections/section-3";

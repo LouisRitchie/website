@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: white;
+
+  background: -webkit-gradient(linear, top left, bottom left, from(#181a1b), to(#252829));
+  background: -webkit-linear-gradient(#181a1b, #252829);
+  background: linear-gradient(#181a1b,#252829);
+}
+
+strong {
+  color: orange;
+}
+
+li {
+  padding: 5px;
+}
+
+ol li:nth-child(1) {
+  color: lightgreen;
+}
+
+ol li:nth-child(2) {
+  color: lemonchiffon;
+}
+
+ol li:nth-child(3) {
+  color: lightsalmon;
+}
+
+ol li:nth-child(4) {
+  color: palevioletred;
+}
+
+ol li:nth-child(5) {
+  color: lightblue;
+}

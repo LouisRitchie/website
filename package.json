@@ -1,0 +1,42 @@
+{
+  "name": "victoriaggj_landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "del": "^2.2.0",
+    "factor-bundle": "^2.5.0",
+    "fullpage": "^1.4.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "fullpage.js": "^2.9.6",
+    "jquery": "^2.2.3",
+    "normalize.css": "^4.1.1",
+    "velocity-animate": "^1.2.3",
+    "vidage": "^0.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisritchie/victoriaggj_landing.git"
+  }
+}

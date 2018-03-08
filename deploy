@@ -1,1 +1,23 @@
-cp -r ~/repos/website/* /var/www/louisritchie.com/html/
+#!/bin/bash
+
+echo "--------------------------------------------------------------------------------"
+echo "                             Deploying to deppth.me"
+echo ""
+echo "Bundling..."
+
+gulp prod
+
+echo "Moving node_modules up one level..."
+echo "Copying everything to server..."
+
+mv node_modules ../nodemodules.tmp
+
+scp -r ./* tito@deppth.me:/var/www/victoriaggj.com/html/
+
+echo "Moving ../node_modules back..."
+
+mv ../nodemodules.tmp ./node_modules
+
+echo ""
+echo "                             Finished deploy."
+echo "--------------------------------------------------------------------------------"

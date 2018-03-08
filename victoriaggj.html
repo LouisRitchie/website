@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Global Game Jam 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.css" type="text/css">
+    <link rel="stylesheet" href="app/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="app/styles/small_screen.css" type="text/css">
+    <link rel="stylesheet" href="app/styles/very_small_screen.css" type="text/css">
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+    <script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script src="app/src/start-fullpage.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="fullpage">
+
+      <div class="section" id="section0">
+        <div class="hero">
+
+          <div class='hero-uvgd-presents'>
+            <img class="logo-uvgd" src="app/assets/uvgd-700.png" alt="logo-uvgd">
+            <p>presents<p>
+          </div>
+
+          <img class='hero-ggj-logo' src="app/assets/ggj-logo.png" alt="ggj victoria logo">
+
+          <p class="hero-sponsored-by">sponsored by</p>
+
+          <div class='hero-sponsor-logos'>
+            <a class="hero-logo-starfish" href="http://starfishmedical.com/"><img src="app/assets/starfish.png" alt="logo-kano"></a>
+            <a class="hero-logo-kano" href="http://kanoapps.com/"><img src="app/assets/kano-700.png" alt="logo-kano"></a>
+            <a class="hero-logo-codename" href="http://codenameentertainment.com/"><img src="app/assets/codename-900.png" alt="logo-codename"></a>
+            <a class="hero-logo-igda" href="http://igdavictoria.com/"><img src="app/assets/igda-700.png" alt="logo-igda"></a>
+            <a class="hero-logo-llamazoo" href="http://llamazoo.com/"><img src="app/assets/llamazoo.png" alt="logo-kano"></a>
+            <a class="hero-logo-echosec" href="http://echosec.net/"><img src="app/assets/echosec.png" alt="logo-kano"></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section" id="section1">
+        <div class="about">
+
+          <div class='blurb'>
+            <img class='whats-the-global-game-jam' src="app/assets/whats-the-global-game-jam-stacked.png" alt="whats-the-global-game-jam">
+
+            <div class='blurb-text'>
+              It's a weekend-long game development event - Spend the weekend making a game in teams or solo! No experience required. 
+              You're fed and given a tshirt while you make a game, enjoy tech talks, a Q&A panel, and some exciting tech.
+              Join us in the Michelle Pujol room on Friday, January 20th to kick off our all-weekend Game Jam.
+
+Our sponsors have provided us with some cool tech that participants can use!
+            </div>
+            <div class='blurb-items'>
+              <div class='wrapper'>
+                <img class="press-kit" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ftechnabob.com%2Fblog%2Fwp-content%2Fuploads%2F2014%2F01%2Ftobii-steelseries-eyex-gaze-tracker-3.jpg&f=1" alt="press-kit" />
+                <span>Tobii Eye Tracking Device!</span>
+              </div>
+              <div class='wrapper'>
+                <img class="press-kit" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.maypalo.com%2Fwp-content%2Fuploads%2F2015%2F10%2FHoloLens.png&f=1" alt="press-kit" />
+                <span>Microsoft Hololens DevKit!</span>
+              </div>
+              <div class='wrapper'>
+                <img class="press-kit" src="https://static1.squarespace.com/static/525ed7ade4b0924d2f499223/t/5784225acd0f68f8a7387732/1468277339550/AsianScene4_Crop.jpg" alt="press-kit" />
+                <span>Unity Screensharing Client!</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class='register'>
+            <img class='how-do-i-sign-up' src="app/assets/how-do-i-sign-up.png" alt="how-do-i-sign-up">
+            <div class='blurb-text'>Sign up at our EventBrite page - Registration is <span class="registration-fee">$25</div></p>
+          </div>
+
+          <a class='button-link' href="http://globalgamejam.org/2017/jam-sites/downtown-victoria/games">
+            2017 Games
+          </a>
+
+        </div>
+      </div>
+      <div class="section" id="section2">
+
+        <div class="schedule">
+
+          <div>
+            <div id="timer">
+              <div class="schedule-heading">Schedule&nbsp;</div>
+              <div class='schedule-starts-in'>starts in</div>
+              <div>
+                <div id="days"></div>
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+              </div>
+            </div>
+
+            <table class="tg">
+              <tr>
+                <th class="tg-yw4l"><br></th>
+                <th class="tg-yw4l">Midnight - 9am<br></th>
+                <th class="tg-yw4l">9am</th>
+                <th class="tg-yw4l">10am</th>
+                <th class="tg-yw4l">11am</th>
+                <th class="tg-yw4l">12pm</th>
+                <th class="tg-yw4l">1pm</th>
+                <th class="tg-yw4l">2pm</th>
+                <th class="tg-yw4l">3pm</th>
+                <th class="tg-yw4l">4pm</th>
+                <th class="tg-yw4l">5pm</th>
+                <th class="tg-yw4l">6pm</th>
+                <th class="tg-yw4l">7pm</th>
+                <th class="tg-yw4l">7pm - Midnight<br></th>
+              </tr>
+
+              <tr>
+                <td class="tg-yw4l">Friday, January 20th<br></td>
+                <td class="tg-yw4l" colspan="6"></td>
+                <td class="tg-yw4l">Check in<br></td>
+                <td class="tg-yw4l" colspan="2">Tech & art talks<br></td>
+                <td class="tg-yw4l">Keynote<br></td>
+                <td class="tg-yw4l" colspan="3">Group social; pitch your game; start!<br>*Deadline to check in is 7pm!*<br></td>
+              </tr>
+
+              <tr>
+                <td class="tg-yw4l">Saturday,<br>January 21st<br><br></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">Breakfast</td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">Deadline for game page<br></td>
+                <td class="tg-yw4l">Lunch<br></td>
+                <td class="tg-yw4l">Panel (see below)<br></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">Playtesting<br></td>
+                <td class="tg-yw4l">Dinner</td>
+                <td class="tg-yw4l"></td>
+              </tr>
+
+              <tr>
+                <td class="tg-yw4l">Sunday, January 22nd<br><br></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">Breakfast</td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">Lunch</td>
+                <td class="tg-yw4l"></td>
+                <td class="tg-yw4l">3pm Deadline for game submission<br></td>
+                <td class="tg-yw4l" colspan="3">Game presentations start at 4:30pm; each team gets 10 minutes to present<br></td>
+                <td class="tg-yw4l">After party at the pub!<br></td>
+                <td class="tg-yw4l"></td>
+              </tr>
+
+            </table>
+            <p>(schedule too small? click the link below)</p>
+          </div>
+
+
+          <div class="schedule-links">
+            <p>
+            We're having a hosted Q&A panel with reps from local industry at 1pm, Saturday! 
+            Eric Jordan of Codename Entertainment, Nick Turner of Echosec, 
+            Steve Macias of Llamazoo, and Niall Redmond of Starfish Medical
+            will sit on a panel at Global Game Jam for a hosted Q&A. Ask the
+            experts your questions when we open up the floor!
+            </p>
+            <div>
+              <a class='button-link' href="http://globalgamejam.org/2017/jam-sites/downtown-victoria/games">
+                2017 Games
+              </a>
+              <a class='button-link' href="https://www.facebook.com/events/233818190391975/">
+                Facebook Page
+              </a>
+              <a class='button-link' href="volunteer.html">
+                Volunteer Info
+              </a>
+            </div>
+            <div>
+              <a class='button-link' href="http://globalgamejam.org/2017/jam-sites/downtown-victoria">
+                Jammer Sign Up
+              </a>
+              <a class='button-link' href="app/assets/schedule.png">
+                Download the Schedule
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="section" id="section3">
+        <div class="contact">
+          <a class='button-link' href="http://globalgamejam.org/2017/jam-sites/downtown-victoria/games">
+            2017 Games
+          </a>
+          <img class="press-kit" src="app/assets/press-kit.png" alt="press-kit">
+          <div>
+            <div>Black background
+              <a href="app/assets/ggj-logo-black.png"><img class="ggj-logo-black-thumb.png" src="app/assets/ggj-logo-black-thumb.png" alt="ggj logo with white background"></a>
+            </div>
+            <div>White background
+              <a href="app/assets/ggj-logo-white.png"><img class="ggj-logo-black-white.png" src="app/assets/ggj-logo-white-thumb.png" alt="ggj logo with white background"></a>
+            </div>
+            <div>Transparent background
+              <a href="app/assets/ggj-logo.png"><img class="ggj-logo-black-thumb.png" src="app/assets/ggj-logo-transparent-thumb.png" alt="ggj logo with transparent background"></a>
+            </div>
+          </div>
+
+          <div class="contact-blurb">
+            <img class="contact-words" src="app/assets/contact.png" alt="contact">
+
+            <p>
+              uvgd@uvic.ca
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
