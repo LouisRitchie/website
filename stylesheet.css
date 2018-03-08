@@ -22,6 +22,8 @@ ul {
 }
 .resume-and-github {
   display: flex;
+	flex-flow: row wrap;
+	max-width: 750px;
 }
 .resume-and-github div a {
   display: flex;
